@@ -15,9 +15,13 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(15),
         child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            color: Colors.orangeAccent,
+          ),
           width: double.infinity,
-          height: 250,
-          color: Colors.blueGrey.shade600,
+          height: 350,
+          // color: Colors.blueGrey.shade600,
           child: Column(
             children: [
               Padding(
@@ -35,9 +39,10 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 100,
-                      height: 100,
+                    child: CircleAvatar(
+                      radius: 50,
+                      // width: 100,
+                      // height: 100,
                       child: Image.asset('assets/avatar2.png'),
                     ),
                   ),
@@ -66,9 +71,9 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           spacing: 3,
                           children: [
-                            Icon(Icons.home, size: 20),
+                            Icon(Icons.work_rounded, size: 20),
                             Text(
-                              "TechTown Solutions",
+                              "Flutter Developer",
                               style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
@@ -112,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20, bottom: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   // crossAxisAlignment: CrossAxisAlignment.,
@@ -129,6 +134,36 @@ class HomeScreen extends StatelessWidget {
                         Text("alpitprogadhave6596@gmail.com")
                       ],
                     )
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: Container(
+                      width: 386,
+                      height: 2,
+                      color: Colors.black,
+                      // padding: EdgeInsets.all(8),
+                    ),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Expanded(child: Text("Hey Folks! This is Alpit Gadhave, I am newly starting the Flutter Development and I gained the some experinced in UI designing in Flutter."),
+                    ),
+                    // Padding(
+                    //   padding: const EdgeInsets.all(8.0),
+                    //   child: Container(
+                    //     width: 380,
+                    //     child: Text("Hey Folks! This is Alpit Gadhave, I am newly starting the Flutter Development and I gained the some experinced in UI designing in Flutter."),
+                    //   ),
+                    // )
+                    // Text("Hey Folks! This is Alpit Gadhave, I am newly starting the Flutter Development and I gained the some experinced in UI designing in Flutter.")
                   ],
                 ),
               )
